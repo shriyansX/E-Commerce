@@ -162,6 +162,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Built with ❤️ by [Your Name]**
+**Built with ❤️ by Shriyans**
 
 *Last updated: January 2025* 
