@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopEase - Modern E-Commerce</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛍️</text></svg>">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo-nav">
+        <a href="/" class="logo">
+          <div class="logo-icon">S</div>
+          ShopEase
+        </a>
+        <nav>
+          <a href="/">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <button id="cart-btn">
+          🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Discover Your Style</h1>
+        <p>Explore our curated collection of premium products. From fashion to electronics, find everything you need with unbeatable quality and style.</p>
+        <a href="#shop" class="hero-btn">
+          Shop Now →
+        </a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80" alt="Fashion Collection">
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Bar -->
+  <section class="feature-bar">
+    <div class="feature-container">
+      <div class="feature">
+        <div class="feature-icon">🚚</div>
+        <div class="feature-text">Free Shipping</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔄</div>
+        <div class="feature-text">Easy Returns</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💳</div>
+        <div class="feature-text">Secure Payment</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⭐</div>
+        <div class="feature-text">Premium Quality</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories-section">
+    <div class="categories-container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="categories-grid">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Men's Sunglasses">
+          <div class="category-content">
+            <div class="category-title">Men's Sunglasses</div>
+            <div class="category-description">Stylish and protective eyewear for every occasion</div>
+            <a href="#shop" class="category-btn">Shop Now →</a>
+          </div>
+        </div>
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=400&q=80" alt="Men's Shoes">
+          <div class="category-content">
+            <div class="category-title">Men's Shoes</div>
+            <div class="category-description">Comfortable and trendy footwear for all seasons</div>
+            <a href="#shop" class="category-btn">Shop Now →</a>
+          </div>
+        </div>
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Men's T-Shirts">
+          <div class="category-content">
+            <div class="category-title">Men's T-Shirts</div>
+            <div class="category-description">Premium cotton tees with modern designs</div>
+            <a href="#shop" class="category-btn">Shop Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters Section -->
+  <section class="filters" id="shop">
+    <div class="filters-container">
+      <select id="category-filter">
+        <option value="">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+      </select>
+      <select id="sort-filter">
+        <option value="">Sort By</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating-desc">Rating: High to Low</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section">
+    <div class="products-container">
+      <div id="product-list"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <h2>About ShopEase</h2>
+      <p>ShopEase is dedicated to providing a seamless and enjoyable online shopping experience. We offer a curated selection of quality products, a user-friendly interface, and a commitment to customer satisfaction. Our mission is to make online shopping simple, secure, and satisfying for everyone.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="testimonials-container">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-list">
+        <div class="testimonial-card">
+          <div class="testimonial-text">"Great selection and super easy checkout! The quality of products exceeded my expectations."</div>
+          <div class="testimonial-author">— Priya S.</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">"I found exactly what I needed, and the site looks amazing. Fast delivery too!"</div>
+          <div class="testimonial-author">— Rahul M.</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">"Fast delivery and excellent customer service! Will definitely shop here again."</div>
+          <div class="testimonial-author">— Ayesha K.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>Have questions or need support? We're here to help!</p>
+      <p>Email us at <a href="mailto:shriyans696@gmail.com">shriyans696@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 ShopEase. All rights reserved. | Contact: shriyans696@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div class="modal" id="checkout-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Shopping Cart</h3>
+        <button id="close-modal">&times;</button>
+      </div>
+      <div id="cart-items"></div>
+      <div class="cart-total">Total: $<span id="cart-total">0</span></div>
+      <button id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
